@@ -1,0 +1,115 @@
+# Project: jd购物系统
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = main.o 欢迎.o 选择系统.o 管理员注册登录.o 管理员注册.o 管理员链表.o 文件保存与读取.o 管理员登录.o 管理员界面.o 商品链表.o 商品管理.o 用户链表.o 用户界面.o 用户注册登录.o 用户注册.o 用户登录.o 用户管理.o 会员管理.o 搜索.o 购物车链表.o 购物车界面.o 会员升级.o 支付密码.o 秒杀链表.o 愿望单链表.o 评论链表.o 评论区.o 购买记录链表.o 送别.o 排序.o
+LINKOBJ  = main.o 欢迎.o 选择系统.o 管理员注册登录.o 管理员注册.o 管理员链表.o 文件保存与读取.o 管理员登录.o 管理员界面.o 商品链表.o 商品管理.o 用户链表.o 用户界面.o 用户注册登录.o 用户注册.o 用户登录.o 用户管理.o 会员管理.o 搜索.o 购物车链表.o 购物车界面.o 会员升级.o 支付密码.o 秒杀链表.o 愿望单链表.o 评论链表.o 评论区.o 购买记录链表.o 送别.o 排序.o
+LIBS     = -L"D:/dev/Dev-Cpp/MinGW64/lib" -L"D:/dev/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
+INCS     = -I"D:/dev/Dev-Cpp/MinGW64/include" -I"D:/dev/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/dev/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"D:/dev/Dev-Cpp/MinGW64/include" -I"D:/dev/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/dev/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/dev/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = jd购物系统.exe
+CXXFLAGS = $(CXXINCS) -g3 -std=c++11
+CFLAGS   = $(INCS) -g3 -std=c++11
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+欢迎.o: 欢迎.c
+	$(CC) -c 欢迎.c -o 欢迎.o $(CFLAGS)
+
+选择系统.o: 选择系统.c
+	$(CC) -c 选择系统.c -o 选择系统.o $(CFLAGS)
+
+管理员注册登录.o: 管理员注册登录.c
+	$(CC) -c 管理员注册登录.c -o 管理员注册登录.o $(CFLAGS)
+
+管理员注册.o: 管理员注册.c
+	$(CC) -c 管理员注册.c -o 管理员注册.o $(CFLAGS)
+
+管理员链表.o: 管理员链表.c
+	$(CC) -c 管理员链表.c -o 管理员链表.o $(CFLAGS)
+
+文件保存与读取.o: 文件保存与读取.c
+	$(CC) -c 文件保存与读取.c -o 文件保存与读取.o $(CFLAGS)
+
+管理员登录.o: 管理员登录.c
+	$(CC) -c 管理员登录.c -o 管理员登录.o $(CFLAGS)
+
+管理员界面.o: 管理员界面.c
+	$(CC) -c 管理员界面.c -o 管理员界面.o $(CFLAGS)
+
+商品链表.o: 商品链表.c
+	$(CC) -c 商品链表.c -o 商品链表.o $(CFLAGS)
+
+商品管理.o: 商品管理.c
+	$(CC) -c 商品管理.c -o 商品管理.o $(CFLAGS)
+
+用户链表.o: 用户链表.c
+	$(CC) -c 用户链表.c -o 用户链表.o $(CFLAGS)
+
+用户界面.o: 用户界面.c
+	$(CC) -c 用户界面.c -o 用户界面.o $(CFLAGS)
+
+用户注册登录.o: 用户注册登录.c
+	$(CC) -c 用户注册登录.c -o 用户注册登录.o $(CFLAGS)
+
+用户注册.o: 用户注册.c
+	$(CC) -c 用户注册.c -o 用户注册.o $(CFLAGS)
+
+用户登录.o: 用户登录.c
+	$(CC) -c 用户登录.c -o 用户登录.o $(CFLAGS)
+
+用户管理.o: 用户管理.c
+	$(CC) -c 用户管理.c -o 用户管理.o $(CFLAGS)
+
+会员管理.o: 会员管理.c
+	$(CC) -c 会员管理.c -o 会员管理.o $(CFLAGS)
+
+搜索.o: 搜索.c
+	$(CC) -c 搜索.c -o 搜索.o $(CFLAGS)
+
+购物车链表.o: 购物车链表.c
+	$(CC) -c 购物车链表.c -o 购物车链表.o $(CFLAGS)
+
+购物车界面.o: 购物车界面.c
+	$(CC) -c 购物车界面.c -o 购物车界面.o $(CFLAGS)
+
+会员升级.o: 会员升级.c
+	$(CC) -c 会员升级.c -o 会员升级.o $(CFLAGS)
+
+支付密码.o: 支付密码.c
+	$(CC) -c 支付密码.c -o 支付密码.o $(CFLAGS)
+
+秒杀链表.o: 秒杀链表.c
+	$(CC) -c 秒杀链表.c -o 秒杀链表.o $(CFLAGS)
+
+愿望单链表.o: 愿望单链表.c
+	$(CC) -c 愿望单链表.c -o 愿望单链表.o $(CFLAGS)
+
+评论链表.o: 评论链表.c
+	$(CC) -c 评论链表.c -o 评论链表.o $(CFLAGS)
+
+评论区.o: 评论区.c
+	$(CC) -c 评论区.c -o 评论区.o $(CFLAGS)
+
+购买记录链表.o: 购买记录链表.c
+	$(CC) -c 购买记录链表.c -o 购买记录链表.o $(CFLAGS)
+
+送别.o: 送别.c
+	$(CC) -c 送别.c -o 送别.o $(CFLAGS)
+
+排序.o: 排序.c
+	$(CC) -c 排序.c -o 排序.o $(CFLAGS)
